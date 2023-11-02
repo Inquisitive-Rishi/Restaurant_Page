@@ -9,6 +9,27 @@ export function showMenuPage() {
     
     const boxes = [bevrageBox,starterBox,mainCourseBox] 
 
+    const bevTitle = document.createElement('h2');
+    const startTitle = document.createElement('h2');
+    const mainCourseTitle = document.createElement('h2');
+
+    bevTitle.textContent = 'Bevrages';
+    startTitle.textContent = 'Starter';
+    mainCourseTitle.textContent = 'Main-Courses';
+
+    bevrageBox.appendChild(bevTitle)
+    starterBox.appendChild(startTitle)
+    mainCourseBox.appendChild(mainCourseTitle)
+
+    const titles = [bevTitle,startTitle,mainCourseTitle];
+
+
+    titles.forEach(title => {
+        title.style.marginLeft = 'auto'
+        title.style.marginRight = 'auto'
+        title.style.marginTop = '10px'    
+    })
+
     boxes.forEach(box => {
         box.style.display = 'flex'
         box.style.borderRadius = '30px'
@@ -17,6 +38,7 @@ export function showMenuPage() {
         box.style.border = '2px solid brown'
         box.style.marginBottom = '20px'
     })
+
 
     section.style.display = 'grid'
     section.style.margin = '30px'
