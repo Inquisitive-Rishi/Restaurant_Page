@@ -15,7 +15,7 @@
   \***********************/
 /***/ (() => {
 
-eval("console.log(\"Hello\");\n\n//# sourceURL=webpack://restaurant_page/./src/script.js?");
+eval("\nconst homeBtn = document.createElement('button')\nconst menuBtn = document.createElement('button')\nconst contactBtn = document.createElement('button')\n\nhomeBtn.setAttribute('id','header-btn')\nmenuBtn.setAttribute('id','content-btn')\ncontactBtn.setAttribute('id','footer-btn')\n\nhomeBtn.textContent = \"HOME\"\nmenuBtn.textContent = \"MENU\"\ncontactBtn.textContent = \"CONTACT\"\n\nconst btns = [homeBtn,menuBtn,contactBtn]\n\nbtns.forEach(btn => {\n    document.body.appendChild(btn)\n})\n\n//# sourceURL=webpack://restaurant_page/./src/script.js?");
 
 /***/ })
 
