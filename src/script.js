@@ -21,14 +21,17 @@ homeBtn.textContent = 'HOME';
 menuBtn.textContent = 'MENU';
 contactBtn.textContent = 'CONTACT';
 
-const btns = [homeBtn,menuBtn,contactBtn]
+const btns = [homeBtn,menuBtn,contactBtn];
+const contents = [header,content,footer]
 
+
+// append buttons to header
 btns.forEach(btn => {
     header.appendChild(btn)
     btn.style.padding = '5px'
 });
 
-body.appendChild(header)
-
+// append header content footer to body
+contents.forEach(content => body.appendChild(content));
 
 
