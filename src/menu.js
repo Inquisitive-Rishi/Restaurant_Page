@@ -32,6 +32,7 @@ export function showMenuPage() {
 
     boxes.forEach(box => {
         box.style.display = 'flex'
+        box.style.flexWrap = 'wrap';
         box.style.borderRadius = '30px'
         box.style.height = '500px';
         box.style.width = '800px';    
