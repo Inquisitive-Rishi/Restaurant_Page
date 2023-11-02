@@ -54,6 +54,14 @@ function removeFirstChild() {
     }
 }
 
+
+defaultPageView()
+
+function defaultPageView() {
+    removeFirstChild();
+    showHomePage();
+}
+
 homeBtn.addEventListener('click', () => {
     removeFirstChild()
     showHomePage()
@@ -68,3 +76,4 @@ contactBtn.addEventListener('click', () => {
     removeFirstChild()
     showContactPage()
 });
+
