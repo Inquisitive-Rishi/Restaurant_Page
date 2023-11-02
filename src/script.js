@@ -1,14 +1,22 @@
+import { showHomePage } from './home';
 import './style.css';
 
 const body = document.querySelector('body')
 
 const header = document.createElement('div')
-const content = document.createElement('div')
 const footer = document.createElement('div')
+export const content = document.createElement('div')
 
 const homeBtn = document.createElement('button')
 const menuBtn = document.createElement('button')
 const contactBtn = document.createElement('button')
+
+body.style.display = 'flex';
+body.style.flexDirection = 'column';
+content.style.display = 'flex';
+content.style.flex = 1;
+content.style.justifyContent = 'center';
+content.style.minHeight = '100vh';
 
 homeBtn.textContent = 'HOME';
 menuBtn.textContent = 'MENU';
@@ -17,6 +25,7 @@ contactBtn.textContent = 'CONTACT';
 const btns = [homeBtn,menuBtn,contactBtn];
 const contents = [header,content,footer]
 const headerFooter = [header,footer];
+
 
 // append buttons to header
 btns.forEach(btn => {
@@ -37,3 +46,5 @@ headerFooter.forEach(el => {
     el.style.height = '50px'
 })
 
+
+showHomePage()

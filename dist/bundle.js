@@ -110,13 +110,23 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
 
 /***/ }),
 
+/***/ "./src/home.js":
+/*!*********************!*\
+  !*** ./src/home.js ***!
+  \*********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   showHomePage: () => (/* binding */ showHomePage)\n/* harmony export */ });\n/* harmony import */ var _script__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./script */ \"./src/script.js\");\n\n\n\n\nfunction showHomePage() {\n    const txt = document.createElement('h1')\n    txt.textContent = 'Homepage';    \n    _script__WEBPACK_IMPORTED_MODULE_0__.content.appendChild(txt);\n}\n\n//# sourceURL=webpack://restaurant_page/./src/home.js?");
+
+/***/ }),
+
 /***/ "./src/script.js":
 /*!***********************!*\
   !*** ./src/script.js ***!
   \***********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n\n\nconst body = document.querySelector('body')\n\nconst header = document.createElement('div')\nconst content = document.createElement('div')\nconst footer = document.createElement('div')\n\nconst homeBtn = document.createElement('button')\nconst menuBtn = document.createElement('button')\nconst contactBtn = document.createElement('button')\n\nhomeBtn.textContent = 'HOME';\nmenuBtn.textContent = 'MENU';\ncontactBtn.textContent = 'CONTACT';\n\nconst btns = [homeBtn,menuBtn,contactBtn];\nconst contents = [header,content,footer]\nconst headerFooter = [header,footer];\n\n// append buttons to header\nbtns.forEach(btn => {\n    header.appendChild(btn)\n    btn.style.padding = '5px'\n});\n\n// append header content footer to body\ncontents.forEach(content => body.appendChild(content));\n\n// add same style to header and footer\nheaderFooter.forEach(el => {\n    el.style.display = 'flex';\n    el.style.justifyContent = 'center'\n    el.style.alignItems = 'center'\n    el.style.gap = '10px';\n    el.style.backgroundColor = 'pink';\n    el.style.height = '50px'\n})\n\n\n\n//# sourceURL=webpack://restaurant_page/./src/script.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   content: () => (/* binding */ content)\n/* harmony export */ });\n/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./home */ \"./src/home.js\");\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n\n\n\nconst body = document.querySelector('body')\n\nconst header = document.createElement('div')\nconst footer = document.createElement('div')\nconst content = document.createElement('div')\n\nconst homeBtn = document.createElement('button')\nconst menuBtn = document.createElement('button')\nconst contactBtn = document.createElement('button')\n\nbody.style.display = 'flex';\nbody.style.flexDirection = 'column';\ncontent.style.display = 'flex';\ncontent.style.flex = 1;\ncontent.style.justifyContent = 'center';\ncontent.style.minHeight = '100vh';\n\nhomeBtn.textContent = 'HOME';\nmenuBtn.textContent = 'MENU';\ncontactBtn.textContent = 'CONTACT';\n\nconst btns = [homeBtn,menuBtn,contactBtn];\nconst contents = [header,content,footer]\nconst headerFooter = [header,footer];\n\n\n// append buttons to header\nbtns.forEach(btn => {\n    header.appendChild(btn)\n    btn.style.padding = '5px'\n});\n\n// append header content footer to body\ncontents.forEach(content => body.appendChild(content));\n\n// add same style to header and footer\nheaderFooter.forEach(el => {\n    el.style.display = 'flex';\n    el.style.justifyContent = 'center'\n    el.style.alignItems = 'center'\n    el.style.gap = '10px';\n    el.style.backgroundColor = 'pink';\n    el.style.height = '50px'\n})\n\n\n;(0,_home__WEBPACK_IMPORTED_MODULE_0__.showHomePage)()\n\n//# sourceURL=webpack://restaurant_page/./src/script.js?");
 
 /***/ })
 
@@ -196,7 +206,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
 /******/ 	
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
-/******/ 	// This entry module can't be inlined because the eval devtool is used.
+/******/ 	// This entry module is referenced by other modules so it can't be inlined
 /******/ 	var __webpack_exports__ = __webpack_require__("./src/script.js");
 /******/ 	
 /******/ })()
