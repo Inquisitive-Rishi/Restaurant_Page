@@ -1,4 +1,6 @@
+import { showContactPage } from './contact';
 import { showHomePage } from './home';
+import { showMenuPage } from './menu';
 import './style.css';
 
 const body = document.querySelector('body')
@@ -46,5 +48,23 @@ headerFooter.forEach(el => {
     el.style.height = '50px'
 })
 
+function removeFirstChild() {
+    if (content.firstChild) {
+        content.firstChild.remove()
+    }
+}
 
-showHomePage()
+homeBtn.addEventListener('click', () => {
+    removeFirstChild()
+    showHomePage()
+});
+
+menuBtn.addEventListener('click', () => {
+    removeFirstChild()
+    showMenuPage();
+});
+
+contactBtn.addEventListener('click', () => {
+    removeFirstChild()
+    showContactPage()
+});

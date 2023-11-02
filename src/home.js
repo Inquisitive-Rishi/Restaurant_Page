@@ -1,9 +1,9 @@
 import { content } from "./script";
 
-
-
 export function showHomePage() {
+    const section = document.createElement('section');
     const txt = document.createElement('h1')
     txt.textContent = 'Homepage';    
-    content.appendChild(txt);
+    section.appendChild(txt)
+    content.appendChild(section);
 }
