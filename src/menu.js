@@ -105,6 +105,7 @@ export function showMenuPage() {
         card.style.border = '2px solid black'
     })
     
+
     cardContainer1.appendChild(card1)
     cardContainer1.appendChild(card2)
     cardContainer1.appendChild(card3)
