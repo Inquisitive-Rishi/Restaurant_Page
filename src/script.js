@@ -53,14 +53,18 @@ btns.forEach(btn => {
 // append header content footer to body
 contents.forEach(content => body.appendChild(content));
 
-header.style.gap = '20px'
+    header.style.height = '70px'
+    header.style.gap = '20px'
+    footer.style.height = '50px'
+    footer.style.backgroundColor = 'rgb(21, 20, 20)'
+    footer.textContent = 'Copyright © Rishi Raj'
+    footer.style.color = 'white'
 
 // add same style to header and footer
 headerFooter.forEach(el => {
     el.style.display = 'flex';
     el.style.justifyContent = 'center'
     el.style.alignItems = 'center'
-    el.style.height = '70px'
 })
 
 function removeFirstChild() {
