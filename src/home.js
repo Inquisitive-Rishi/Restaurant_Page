@@ -4,7 +4,9 @@ import homeImage from './bharat.jpg';
 export function showHomePage() {
     const homeImg = new Image()
     homeImg.src = homeImage;
-    content.classList.add('home-img')
+    content.classList.remove('menu-bg')
+    content.classList.remove('wood-bg')
+    content.classList.add('home-bg')
     const section = document.createElement('section');
     const title = document.createElement('h1')
     const subtxt = document.createElement('p')

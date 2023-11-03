@@ -1,9 +1,11 @@
 import { content } from "./script";
-import menuBg from './images/menuBg.jpeg'
+import menuBg from './images/menuBg.jpeg';
 
 export function showMenuPage() {
     const menuImg = new Image()
     menuImg.src = menuBg;
+    content.classList.remove('home-bg')
+    content.classList.remove('wood-bg')
     content.classList.add('menu-bg')
     const section = document.createElement('section');
 
@@ -12,6 +14,7 @@ export function showMenuPage() {
     const mainCourseBox = document.createElement('div')
     
     const boxes = [bevrageBox,starterBox,mainCourseBox] 
+
 
     const bevTitle = document.createElement('button');
     const startTitle = document.createElement('button');
@@ -41,6 +44,7 @@ export function showMenuPage() {
     bevrageBox.style.display = 'flex'
     bevrageBox.style.position = 'relative'
     bevrageBox.style.flexDirection = 'column'
+    bevrageBox.style.backgroundColor = 'white'
     bevrageBox.style.padding = '20px'
     bevrageBox.style.height = '500px';
     bevrageBox.style.width = '800px';    
@@ -50,6 +54,7 @@ export function showMenuPage() {
     starterBox.style.display = 'flex'
     starterBox.style.position = 'relative'
     starterBox.style.flexDirection = 'column'
+    starterBox.style.backgroundColor = 'white'
     starterBox.style.padding = '20px'
     starterBox.style.height = '500px';
     starterBox.style.width = '800px';    
@@ -58,6 +63,7 @@ export function showMenuPage() {
     
     mainCourseBox.style.display = 'flex'
     mainCourseBox.style.position = 'relative'
+    mainCourseBox.style.backgroundColor = 'white'
     mainCourseBox.style.flexDirection = 'column'
     mainCourseBox.style.padding = '20px'
     mainCourseBox.style.height = '500px';

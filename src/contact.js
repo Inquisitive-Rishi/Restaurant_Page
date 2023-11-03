@@ -1,6 +1,13 @@
 import { content } from "./script";
+import woodImg from './images/wood.avif'
 
 export function showContactPage() {
+    const woodBg = new Image()
+    woodBg.src = woodImg;
+    content.classList.remove('home-bg')
+    content.classList.remove('menu-bg')
+    content.classList.add('wood-bg')
+
     content.style.alignItems = 'center'
     const section = document.createElement('section');
     section.style.padding = '20px'
@@ -44,6 +51,7 @@ export function showContactPage() {
     boxes.forEach(box => {
         box.style.display = 'flex';
         box.style.justifyContent = 'space-between';
+        box.style.backgroundColor = 'white'
         box.style.alignItems = 'center'
         box.style.padding = '20px';
         box.style.height = '150px';
