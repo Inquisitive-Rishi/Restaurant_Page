@@ -196,7 +196,7 @@ eval("module.exports = __webpack_require__.p + \"382f7b8f3cd86a83950d.jpg\";\n\n
   \********************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"7b15aa123e8a4080b672.jpeg\";\n\n//# sourceURL=webpack://restaurant_page/./src/images/menuBg.jpeg?");
+eval("module.exports = __webpack_require__.p + \"61bf8a334d6c87358f9a.jpeg\";\n\n//# sourceURL=webpack://restaurant_page/./src/images/menuBg.jpeg?");
 
 /***/ }),
 
