@@ -1,6 +1,10 @@
 import { content } from "./script";
+import homeImage from './bharat.jpg'; 
 
 export function showHomePage() {
+    const homeImg = new Image()
+    homeImg.src = homeImage;
+    content.classList.add('home-img')
     const section = document.createElement('section');
     const title = document.createElement('h1')
     const subtxt = document.createElement('p')
@@ -14,6 +18,9 @@ export function showHomePage() {
     title.style.fontSize = '70px'
     title.style.letterSpacing = '2px'
     subtxt.textContent = "Tandoori Twist invites you to experience the rich and fiery flavors of Indian cuisine. Our tandoor oven sizzles with mouthwatering kebabs and bread, while our chefs craft delectable curries and biryanis. Every dish is a testament to India's culinary heritage, and we're proud to bring it to your table."
+
+    title.style.color = 'white'
+    subtxt.style.color = 'white'
 
     timeAndLocation.style.display = 'flex'
     timeAndLocation.style.alignItems = 'center'

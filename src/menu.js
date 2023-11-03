@@ -1,6 +1,10 @@
 import { content } from "./script";
+import menuBg from './images/menuBg.jpeg'
 
 export function showMenuPage() {
+    const menuImg = new Image()
+    menuImg.src = menuBg;
+    content.classList.add('menu-bg')
     const section = document.createElement('section');
 
     const bevrageBox = document.createElement('div')
@@ -100,6 +104,13 @@ export function showMenuPage() {
     })
 
     cards.forEach(card => {
+        // card.addEventListener('mouseenter', ()=> {
+        //     card.style.backgroundColor = 'blue'
+        // })
+        // card.addEventListener('mouseleave', ()=> {
+        //     card.style.backgroundColor = 'white';
+        // })
+
         card.style.height = '45%'
         card.style.width = '30%'
         card.style.border = '2px solid black'
