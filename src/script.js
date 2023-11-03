@@ -44,6 +44,7 @@ headerFooter.forEach(el => {
     el.style.justifyContent = 'center'
     el.style.alignItems = 'center'
     el.style.gap = '10px';
+    el.style.backgroundColor = 'pink';
     el.style.height = '50px'
 })
 

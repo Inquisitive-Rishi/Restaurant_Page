@@ -1,5 +1,5 @@
 import { content } from "./script";
-import woodImg from './images/wood.avif'
+import woodImg from './images/wood.avif';
 
 export function showContactPage() {
     const woodBg = new Image()

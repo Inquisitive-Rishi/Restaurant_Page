@@ -44,31 +44,25 @@ export function showMenuPage() {
     bevrageBox.style.display = 'flex'
     bevrageBox.style.position = 'relative'
     bevrageBox.style.flexDirection = 'column'
-    bevrageBox.style.backgroundColor = 'white'
     bevrageBox.style.padding = '20px'
     bevrageBox.style.height = '500px';
     bevrageBox.style.width = '800px';    
-    bevrageBox.style.border = '2px solid brown'
     bevrageBox.style.marginBottom = '20px'
 
     starterBox.style.display = 'flex'
     starterBox.style.position = 'relative'
     starterBox.style.flexDirection = 'column'
-    starterBox.style.backgroundColor = 'white'
     starterBox.style.padding = '20px'
     starterBox.style.height = '500px';
     starterBox.style.width = '800px';    
-    starterBox.style.border = '2px solid brown'
     starterBox.style.marginBottom = '20px'
     
     mainCourseBox.style.display = 'flex'
     mainCourseBox.style.position = 'relative'
-    mainCourseBox.style.backgroundColor = 'white'
     mainCourseBox.style.flexDirection = 'column'
     mainCourseBox.style.padding = '20px'
     mainCourseBox.style.height = '500px';
     mainCourseBox.style.width = '800px';    
-    mainCourseBox.style.border = '2px solid brown'
     mainCourseBox.style.marginBottom = '20px'
     
     const cardContainer1 = document.createElement('div')
@@ -110,13 +104,7 @@ export function showMenuPage() {
     })
 
     cards.forEach(card => {
-        // card.addEventListener('mouseenter', ()=> {
-        //     card.style.backgroundColor = 'blue'
-        // })
-        // card.addEventListener('mouseleave', ()=> {
-        //     card.style.backgroundColor = 'white';
-        // })
-
+        card.style.backgroundColor = 'white'
         card.style.height = '45%'
         card.style.width = '30%'
         card.style.border = '2px solid black'
