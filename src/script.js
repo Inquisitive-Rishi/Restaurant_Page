@@ -39,7 +39,7 @@ btns.forEach(btn => {
     btn.style.fontSize = '1.05em'
     btn.style.fontWeight = 900;
     btn.addEventListener('mouseenter', () => {
-        btn.style.backgroundColor = 'black'
+        btn.style.backgroundColor = 'rgb(21, 20, 20)'
         btn.style.color = 'white';
         btn.style.border = '2px solid white'
     })
