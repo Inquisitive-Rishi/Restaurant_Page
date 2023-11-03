@@ -1,4 +1,4 @@
-import { content } from "./script";
+import { header,footer,content } from "./script";
 import menuBg from './images/menuBg.jpeg';
 
 export function showMenuPage() {
@@ -132,6 +132,7 @@ export function showMenuPage() {
     cardContainer3.appendChild(card17)
     cardContainer3.appendChild(card18)
 
+    header.style.backgroundColor = 'rgb(21, 20, 20)';
 
     section.style.display = 'grid'
     section.style.margin = '30px'

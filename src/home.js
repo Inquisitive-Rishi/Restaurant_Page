@@ -1,5 +1,5 @@
-import { content } from "./script";
 import homeImage from './bharat.jpg'; 
+import { header,footer,content } from "./script";
 
 export function showHomePage() {
     const homeImg = new Image()
@@ -41,6 +41,8 @@ export function showHomePage() {
     timeAndLocation.appendChild(locationTitle)
     timeAndLocation.appendChild(locationSubtitle)
     section.style.margin = '100px'
+
+    header.style.backgroundColor = 'black';
 
     section.appendChild(title)
     section.appendChild(subtxt)

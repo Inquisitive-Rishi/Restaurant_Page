@@ -5,8 +5,8 @@ import './style.css';
 
 const body = document.querySelector('body')
 
-const header = document.createElement('div')
-const footer = document.createElement('div')
+export const header = document.createElement('div')
+export const footer = document.createElement('div')
 export const content = document.createElement('div')
 
 const homeBtn = document.createElement('button')
@@ -32,7 +32,7 @@ const headerFooter = [header,footer];
 // append buttons to header
 btns.forEach(btn => {
     header.appendChild(btn)
-    btn.style.padding = '5px'
+    btn.style.padding = '10px';
 });
 
 // append header content footer to body
@@ -44,8 +44,7 @@ headerFooter.forEach(el => {
     el.style.justifyContent = 'center'
     el.style.alignItems = 'center'
     el.style.gap = '10px';
-    el.style.backgroundColor = 'pink';
-    el.style.height = '50px'
+    el.style.height = '70px'
 })
 
 function removeFirstChild() {
