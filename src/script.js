@@ -33,17 +33,33 @@ const headerFooter = [header,footer];
 btns.forEach(btn => {
     header.appendChild(btn)
     btn.style.padding = '10px';
+    btn.style.borderRadius = '25px'
+    btn.style.paddingRight = '20px'
+    btn.style.paddingLeft = '20px'
+    btn.style.fontSize = '1.05em'
+    btn.style.fontWeight = 900;
+    btn.addEventListener('mouseenter', () => {
+        btn.style.backgroundColor = 'black'
+        btn.style.color = 'white';
+        btn.style.border = '2px solid white'
+    })
+
+    btn.addEventListener('mouseleave', () => {
+        btn.style.backgroundColor = "white";
+        btn.style.color = 'black';
+    })
 });
 
 // append header content footer to body
 contents.forEach(content => body.appendChild(content));
+
+header.style.gap = '20px'
 
 // add same style to header and footer
 headerFooter.forEach(el => {
     el.style.display = 'flex';
     el.style.justifyContent = 'center'
     el.style.alignItems = 'center'
-    el.style.gap = '10px';
     el.style.height = '70px'
 })
 
