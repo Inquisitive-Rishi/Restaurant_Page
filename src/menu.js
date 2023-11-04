@@ -2,6 +2,10 @@ import { header,footer,content } from "./script";
 import menuBg from './images/menuBg.jpeg';
 import chai from './chai.jpg';
 import lassi from './images/bevrages/lassi.avif';
+import lemonade from './images/bevrages/lemonade.avif';
+import sattu from './images/bevrages/sattu.avif';
+import sugarcane from './images/bevrages/sugarcane-juice.avif';
+import thandai from './images/bevrages/thandai.avif';
 
 export function showMenuPage() {
 
@@ -140,16 +144,30 @@ export function showMenuPage() {
     cardContainer3.appendChild(card17)
     cardContainer3.appendChild(card18)
 
-
+    // image add
     const chaiImg = new Image()
     chaiImg.src = chai;
     card1.classList.add('chai-img')
 
     const lassiImg = new Image()
     lassiImg.src = lassi;
-    lassiImg.style.maxWidth = '100%'
-    lassiImg.style.maxHeight = '100%'
     card2.classList.add('lassi-img')
+
+    const lemonadeImg = new Image()
+    lemonadeImg.src = lemonade;
+    card3.classList.add('lemonade-img')
+
+    const sattuImg = new Image()
+    sattuImg.src = sattu;
+    card4.classList.add('sattu-img')
+
+    const sugarcaneImg = new Image()
+    sugarcaneImg.src = sugarcane;
+    card5.classList.add('sugarcane-img')
+
+    const thandaiImg = new Image()
+    thandaiImg.src = thandai;
+    card6.classList.add('thandai-img')
 
 
     header.style.backgroundColor = 'rgb(21, 20, 20)';

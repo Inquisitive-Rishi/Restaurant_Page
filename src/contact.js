@@ -81,9 +81,5 @@ export function showContactPage() {
     box1.appendChild(circle1)
     box2.appendChild(circle2)
     box3.appendChild(circle3)
-    
-    
-    
-
     content.appendChild(section);
 }
