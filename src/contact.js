@@ -1,5 +1,8 @@
 import { content } from "./script";
 import woodImg from './images/wood.avif';
+import man from './images/man.png'
+import man2 from './images/man2.png'
+import girl from './images/girl.png'
 
 export function showContactPage() {
     const woodBg = new Image()
@@ -76,7 +79,23 @@ export function showContactPage() {
         circle.style.borderRadius = '50%'
         circle.style.aspectRatio = 1;
         circle.style.border = '2px solid brown'    
+        circle.style.display = 'flex';
+        circle.style.backgroundSize = 'cover'
+        circle.style.flexDirection = 'column';
     })
+
+    const manImg = new Image()
+    manImg.src = man;
+    circle1.classList.add('man-img')
+
+    const man2Img = new Image()
+    man2Img.src = man2;
+    circle2.classList.add('man2-img')
+    
+    const girlImg = new Image()
+    girlImg.src = girl;
+    circle3.classList.add('girl-img')
+
 
     box1.appendChild(circle1)
     box2.appendChild(circle2)
