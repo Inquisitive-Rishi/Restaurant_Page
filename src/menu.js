@@ -1,11 +1,9 @@
 import { header,footer,content } from "./script";
 import menuBg from './images/menuBg.jpeg';
-import chai from './chai.jpg'
+import chai from './chai.jpg';
+import lassi from './images/bevrages/lassi.avif';
 
 export function showMenuPage() {
-    const chaiImg = new Image()
-    chaiImg.src = chai;
-
 
     const menuImg = new Image()
     menuImg.src = menuBg;
@@ -109,12 +107,15 @@ export function showMenuPage() {
     })
 
     cards.forEach(card => {
+        card.style.display = 'flex';
+        card.style.flexDirection = 'column';
         card.setAttribute('class','card')
         card.style.borderRadius = '10px'
         card.style.backgroundColor = 'white'
         card.style.height = '45%'
         card.style.width = '30%'
         card.style.border = '2px solid white'
+        card.style.backgroundSize = 'cover'
     })
     
 
@@ -139,7 +140,16 @@ export function showMenuPage() {
     cardContainer3.appendChild(card17)
     cardContainer3.appendChild(card18)
 
+
+    const chaiImg = new Image()
+    chaiImg.src = chai;
     card1.classList.add('chai-img')
+
+    const lassiImg = new Image()
+    lassiImg.src = lassi;
+    lassiImg.style.maxWidth = '100%'
+    lassiImg.style.maxHeight = '100%'
+    card2.classList.add('lassi-img')
 
 
     header.style.backgroundColor = 'rgb(21, 20, 20)';
