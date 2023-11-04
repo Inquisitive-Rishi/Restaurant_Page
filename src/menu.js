@@ -127,6 +127,7 @@ export function showMenuPage() {
         card.style.display = 'flex';
         card.style.flexDirection = 'column';
         card.setAttribute('class','card')
+        card.style.wrap = 'text-wrap'
         card.style.borderRadius = '10px'
         card.style.backgroundColor = 'white'
         card.style.height = '45%'
@@ -134,7 +135,6 @@ export function showMenuPage() {
         card.style.border = '2px solid white'
         card.style.backgroundSize = 'cover'
     })
-    
 
     cardContainer1.appendChild(card1)
     cardContainer1.appendChild(card2)
@@ -203,7 +203,7 @@ export function showMenuPage() {
     card11.classList.add('paneerT-img')
 
     const samosaImg = new Image()
-    samosaImg.src = thandai;
+    samosaImg.src = samosa;
     card12.classList.add('samosa-img')
 
     const dosaImg = new Image()
@@ -230,6 +230,14 @@ export function showMenuPage() {
     vegBImg.src = vegB;
     card18.classList.add('vegB-img')
 
+    cards.forEach(card => {
+        card.addEventListener('mouseenter',()=> {
+            console.log('enter');
+        })
+        card.addEventListener('mouseleave',()=> {
+            console.log('leave');
+        })
+    })
 
     header.style.backgroundColor = 'rgb(21, 20, 20)';
 
