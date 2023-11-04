@@ -35,7 +35,6 @@ export function showMenuPage() {
     
     const boxes = [bevrageBox,starterBox,mainCourseBox] 
 
-
     const bevTitle = document.createElement('button');
     const startTitle = document.createElement('button');
     const mainCourseTitle = document.createElement('button');
@@ -106,6 +105,7 @@ export function showMenuPage() {
     const card16 = document.createElement('div')
     const card17 = document.createElement('div')
     const card18 = document.createElement('div')
+
 
     bevrageBox.appendChild(cardContainer1)
     starterBox.appendChild(cardContainer2)
@@ -230,14 +230,14 @@ export function showMenuPage() {
     vegBImg.src = vegB;
     card18.classList.add('vegB-img')
 
-    cards.forEach(card => {
-        card.addEventListener('mouseenter',()=> {
-            console.log('enter');
-        })
-        card.addEventListener('mouseleave',()=> {
-            console.log('leave');
-        })
-    })
+    // cards.forEach(card => {
+    //     card.addEventListener('mouseenter',()=> {
+    //         console.log('enter');
+    //     })
+    //     card.addEventListener('mouseleave',()=> {
+    //         console.log('leave');
+    //     })
+    // })
 
     header.style.backgroundColor = 'rgb(21, 20, 20)';
 

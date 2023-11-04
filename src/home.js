@@ -2,6 +2,7 @@ import homeImage from './bharat.jpg';
 import { header,footer,content } from "./script";
 
 export function showHomePage() {
+
     const homeImg = new Image()
     homeImg.src = homeImage;
     content.classList.remove('menu-bg')
@@ -9,6 +10,7 @@ export function showHomePage() {
     content.classList.add('home-bg')
 
     // content.style.alignItems = 'center'
+
 
     const section = document.createElement('section');
     const title = document.createElement('h1')
@@ -22,6 +24,9 @@ export function showHomePage() {
     subtxt.style.fontFamily = 'Times New Roman'
     subtxt.style.fontWeight = 900;
 
+    timeBtn.addEventListener('click', () => {
+        dialog.showModal()
+    })
 
     timeBtn.style.border = '2px solid white'
     timeBtn.style.backgroundColor = 'black'
@@ -51,6 +56,36 @@ export function showHomePage() {
     timeAndLocation.appendChild(locationTitle)
     timeAndLocation.appendChild(locationSubtitle)
     section.style.margin = '100px'
+
+
+    const dialog = document.querySelector('dialog')
+    const closeModalBtn = document.getElementById('close-modal-btn')
+    dialog.style.margin = 'auto'
+    dialog.style.padding = '30px'
+    dialog.style.fontSize = '1.5em'
+    dialog.style.borderRadius = '10px'
+    dialog.style.backgroundColor = 'rgb(21, 20, 20)'
+    dialog.style.color = 'white'
+    dialog.style.fontFamily = 'sans-serif'
+
+    closeModalBtn.style.marginTop = '10px'
+    closeModalBtn.style.fontSize = '1em'
+    closeModalBtn.style.padding = '5px'
+    closeModalBtn.style.color = 'white'
+    closeModalBtn.style.backgroundColor = 'rgb(21, 20, 20)'
+    closeModalBtn.style.borderRadius = '25px'
+    closeModalBtn.style.border = '2px solid white'
+    closeModalBtn.style.paddingRight = '10px'
+    closeModalBtn.style.paddingLeft = '10px'
+
+
+    timeBtn.addEventListener('click', () => {
+        dialog.showModal()
+    })
+
+    closeModalBtn.addEventListener('click', () => {
+        dialog.close()
+    })
 
     header.style.backgroundColor = 'black';
 
