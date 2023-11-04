@@ -60,3 +60,51 @@
     background-image: url(./images/bevrages/thandai.avif);
 }
 
+.chickenT-img {
+    background-image: url(./images/starter/chicken-tikka.avif);
+}
+
+.dahiP-img {
+    background-image: url(./images/starter/dahi-puri.avif);
+}
+
+.keemaP-img {
+    background-image: url(./images/starter/keema-pav.avif);
+}
+
+.muttonK-img {
+    background-image: url(./images/starter/mutton-kebab.avif);
+}
+
+.paneerT-img {
+    background-image: url(./images/starter/paneer-tikka.avif);
+}
+
+.samosa-img {
+    background-image: url(./images/starter/samosa.avif);
+}
+
+.dosa-img {
+    background-image: url(./images/main_course/dosa.avif);
+}
+
+.chickenB-img {
+    background-image: url(./images/main_course/chicken-biryani.avif);
+}
+
+.idli-img {
+    background-image: url(./images/main_course/idli.avif);
+}
+
+.thali-img {
+    background-image: url(./images/main_course/indian-thali.jpg);
+}
+
+.pPaneer-img {
+    background-image: url(./images/main_course/palak-paneer.jpg);
+}
+
+.vegB-img {
+    background-image: url(./images/main_course/veg-biryani.jpg);
+}
+

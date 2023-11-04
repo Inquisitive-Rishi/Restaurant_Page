@@ -6,6 +6,19 @@ import lemonade from './images/bevrages/lemonade.avif';
 import sattu from './images/bevrages/sattu.avif';
 import sugarcane from './images/bevrages/sugarcane-juice.avif';
 import thandai from './images/bevrages/thandai.avif';
+import chickenT from './images/starter/chicken-tikka.avif';
+import dahiP from './images/starter/dahi-puri.avif'
+import keemaP from './images/starter/keema-pav.avif'
+import muttonK from './images/starter/mutton-kebab.avif'
+import paneerT from './images/starter/paneer-tikka.avif'
+import samosa from './images/starter/samosa.avif'
+
+import dosa from './images/main_course/dosa.avif'
+import chickenB from './images/main_course/chicken-biryani.avif'
+import idli from './images/main_course/idli.avif'
+import thali from './images/main_course/indian-thali.jpg'
+import palakPaneer from './images/main_course/palak-paneer.jpg'
+import vegB from './images/main_course/veg-biryani.jpg'
 
 export function showMenuPage() {
 
@@ -168,6 +181,54 @@ export function showMenuPage() {
     const thandaiImg = new Image()
     thandaiImg.src = thandai;
     card6.classList.add('thandai-img')
+
+    const chickenTImg = new Image()
+    chickenTImg.src = chickenT;
+    card7.classList.add('chickenT-img')
+
+    const dahipImg = new Image()
+    dahipImg.src = dahiP;
+    card8.classList.add('dahiP-img')
+
+    const keemaPImg = new Image()
+    keemaPImg.src = keemaP;
+    card9.classList.add('keemaP-img')
+
+    const muttonKImg = new Image()
+    muttonKImg.src = muttonK;
+    card10.classList.add('muttonK-img')
+
+    const paneerTImg = new Image()
+    paneerTImg.src = paneerT;
+    card11.classList.add('paneerT-img')
+
+    const samosaImg = new Image()
+    samosaImg.src = thandai;
+    card12.classList.add('samosa-img')
+
+    const dosaImg = new Image()
+    dosaImg.src = dosa;
+    card13.classList.add('dosa-img')
+
+    const chickenBImg = new Image()
+    chickenBImg.src = chickenB;
+    card14.classList.add('chickenB-img')
+
+    const idliImg = new Image()
+    idliImg.src = idli;
+    card15.classList.add('idli-img')
+
+    const thaliImg = new Image()
+    thaliImg.src = thali;
+    card16.classList.add('thali-img')
+
+    const pPaneer = new Image()
+    pPaneer.src = palakPaneer;
+    card17.classList.add('pPaneer-img')
+
+    const vegBImg = new Image()
+    vegBImg.src = vegB;
+    card18.classList.add('vegB-img')
 
 
     header.style.backgroundColor = 'rgb(21, 20, 20)';
