@@ -1,7 +1,12 @@
 import { header,footer,content } from "./script";
 import menuBg from './images/menuBg.jpeg';
+import chai from './chai.jpg'
 
 export function showMenuPage() {
+    const chaiImg = new Image()
+    chaiImg.src = chai;
+
+
     const menuImg = new Image()
     menuImg.src = menuBg;
     content.classList.remove('home-bg')
@@ -104,10 +109,12 @@ export function showMenuPage() {
     })
 
     cards.forEach(card => {
+        card.setAttribute('class','card')
+        card.style.borderRadius = '10px'
         card.style.backgroundColor = 'white'
         card.style.height = '45%'
         card.style.width = '30%'
-        card.style.border = '2px solid black'
+        card.style.border = '2px solid white'
     })
     
 
@@ -131,6 +138,9 @@ export function showMenuPage() {
     cardContainer3.appendChild(card16)
     cardContainer3.appendChild(card17)
     cardContainer3.appendChild(card18)
+
+    card1.classList.add('chai-img')
+
 
     header.style.backgroundColor = 'rgb(21, 20, 20)';
 

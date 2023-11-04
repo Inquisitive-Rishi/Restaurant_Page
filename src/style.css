@@ -18,21 +18,6 @@
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 }
 
-.card {
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(218, 233, 238);
-    height: 150px;
-    aspect-ratio: 1;
-    border-radius: 10px;
-    border: 2px solid blue;
-    padding: 10px;
-    font-size: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-
-
 .home-bg, .menu-bg, .wood-bg {
     background-size: cover;
     background-repeat: no-repeat;
@@ -52,5 +37,6 @@
 }
 
 .chai-img {
-    background-image: url(./images/bevrages/chai.jpg);
+    background-image: url(./chai.jpg);
 }
+

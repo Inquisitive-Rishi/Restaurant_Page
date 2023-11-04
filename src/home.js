@@ -12,8 +12,11 @@ export function showHomePage() {
     const subtxt = document.createElement('p')
     const timeBtn = document.createElement('button');
     const timeAndLocation = document.createElement('div');
-    const locationTitle = document.createElement('h3')
-    const locationSubtitle = document.createElement('p')
+
+    timeBtn.style.border = '2px solid white'
+    timeBtn.style.backgroundColor = 'black'
+    timeBtn.style.color = 'white'
+    timeBtn.style.fontWeight = 900;
     
     title.textContent = 'TANDOORI TWIST';
     title.style.fontFamily = 'samarkan';
@@ -33,13 +36,9 @@ export function showHomePage() {
     timeBtn.style.padding = '10px';
     timeBtn.style.fontSize = '1.3rem'
 
-    locationTitle.textContent = 'Location'
-    locationSubtitle.textContent = 'Near Govardhan Fort, Wakanda - 220232'
     timeBtn.style.marginRight = 'auto';
 
     timeAndLocation.appendChild(timeBtn)
-    timeAndLocation.appendChild(locationTitle)
-    timeAndLocation.appendChild(locationSubtitle)
     section.style.margin = '100px'
 
     header.style.backgroundColor = 'black';
